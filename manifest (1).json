@@ -5,9 +5,9 @@
   "display": "standalone",
   "name": "SkillQuest",
   "orientation": "any",
-  "scope": "/",
-  "short_name": "skillquest",
-  "start_url": "/",
+  "scope": "/skillquest/",
+  "short_name":  "SkillQuest",
+  "start_url":  "/skillquest/",
   "theme_color": "#6d28d9",
   "id": "skillquest"
 }
