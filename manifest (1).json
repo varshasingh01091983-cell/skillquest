@@ -1,0 +1,13 @@
+{
+  "background_color": "#0b1023",
+  "description": "SkillQuest — learn, play, and level up with quick quizzes.",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "SkillQuest",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "skillquest",
+  "start_url": "/",
+  "theme_color": "#6d28d9",
+  "id": "skillquest"
+}
