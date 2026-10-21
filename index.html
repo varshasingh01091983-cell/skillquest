@@ -16,6 +16,14 @@ nav{display:flex;gap:8px;margin-bottom:18px}nav button{flex:1;background:#171d35
 button{cursor:pointer;font:inherit}.primary{width:100%;background:linear-gradient(100deg,#8b5cf6,#6d28d9);color:white;border:0;border-radius:14px;padding:14px;font-weight:800}.secondary{width:100%;background:#222747;color:white;border:1px solid #444b70;border-radius:13px;padding:12px;font-weight:700;margin-top:9px}.section-title{font-size:18px;margin:20px 2px 12px}.row{display:flex;align-items:center;gap:12px;background:#171d35;border:1px solid #2d3553;padding:13px;border-radius:15px;margin-bottom:9px}.row .emoji{font-size:22px;background:#292d50;padding:10px;border-radius:12px}.row small{display:block;color:var(--muted);margin-top:3px}.row .arrow{margin-left:auto;color:#c4b5fd}.ad-placeholder{border:1px dashed #4b5578;background:#131a2e;border-radius:13px;padding:13px;color:#aeb8d4;font-size:12px;margin-top:16px}.qtext{font-size:23px;font-weight:800;line-height:1.25;margin:18px 0}.option{width:100%;text-align:left;background:#171d35;border:1px solid #414969;border-radius:13px;padding:13px;margin:5px 0;color:white}.option.correct{border-color:#4ade80;background:#16372d}.option.wrong{border-color:#fb7185;background:#40212f}.feedback{background:#202943;border-radius:12px;padding:12px;margin:12px 0;line-height:1.5}.premium{background:linear-gradient(145deg,#3c2b65,#201d43)}.feature{padding:8px 0;color:#e8e8fa}.feature b{color:var(--green);margin-right:8px}.note{font-size:12px;color:#aeb8d4;line-height:1.5}.hidden{display:none!important}footer{text-align:center;color:#697492;font-size:11px;letter-spacing:1px;margin-top:24px}
 </style>
 </head>
+ <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('./sw.js')
+        .catch(error => console.error(error));
+    });
+  }
+ </script>
 <body><main>
 <header class="top"><div class="logo">⚡</div><div><div class="brand">SkillQuest</div><div class="tag">LEARN · PLAY · LEVEL UP</div></div><div class="points">🪙 <span id="coins">0</span></div></header>
 <nav><button class="active" data-page="home">⌂ Home</button><button data-page="quiz">🧠 Quiz</button><button data-page="premium">♛ Premium</button></nav>
